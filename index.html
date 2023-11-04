@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 6</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="top-buttons">
+        <button onclick="
+                hidePicture('right-pic');
+                revealPicture('left-pic');
+            ">
+            Левая колонка
+        </button>
+
+        <button onclick="
+                revealPicture('left-pic');
+                revealPicture('right-pic');
+            ">
+            Обе две
+        </button>
+
+        <button onclick="
+                hidePicture('left-pic');
+                revealPicture('right-pic');
+            ">
+            Правая колонка
+        </button>
+    </div>
+
+    <div class="pictures-placeholder">
+        <div class="left">
+            <img class="left-pic" src="resources/cat.jpg"/>
+        </div>
+
+        <div class="right">
+            <img class="right-pic" src="resources/dog.jpg"/>
+        </div>
+    </div>
+</body>
+</html>
